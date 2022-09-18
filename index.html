@@ -33,7 +33,7 @@
 <hr noshade="noshade">
 <b><font color="#005128">Project Outline:</font></b>
 <p>
-Finding the Top k frequent items over the massive DataStream is one of the hottest topics in stream processing and it has many applications in the real world such as finding heaviest users and high traffic IPs, finding popular terms from queries made to an Internet search engine and finding most popular passwords in a system with many users (e.g., social media applications) to prevent users from choosing these kinds of passwords.  
+Finding the Top k Frequent Items over the massive DataStream is one of the hottest topics in stream processing and it has many applications in the real world such as finding heaviest users and high traffic IPs, finding popular terms from queries made to an Internet search engine and finding most popular passwords in a system with many users (e.g., social media applications) to prevent users from choosing these kinds of passwords.  
 This topic has two mail limitations: processing time and memory space. Therefore, one practical solution will be using approximate algorithms instead of exact algorithms. One famous approximate algorithm is Count Min Sketch (CMS) which is based on capabilities of sketches to find the frequency of each element. Some related works have been proposed based on CMS in order to increase the efficiency and accuracy.
 In this project, I will review the important papers related to this topic and I will present a multi-core parallelism method in order to report the top frequent items in real time. Each thread will process a local sketch by importing a chunk of DataStream. Also, I will review the performance of using a real time filter-based merging thread for merging results of different threads.
 
